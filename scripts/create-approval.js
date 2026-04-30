@@ -54,7 +54,7 @@ function createApprovalInstance(token, approvalCode, formJson) {
     });
     const options = {
       hostname: 'open.feishu.cn',
-      path: '/open-apis/approval/v4/instances',
+      path: '/open-apis/approval/v4/instances?user_id_type=user_id',
       method: 'POST',
       headers: {
         'Authorization': `Bearer ${token}`,
